@@ -7,7 +7,7 @@ const STORED = {
   PUSHES: 'pushes'
 };
 
-const percentage = (num, total) => (((num/total) || 0) * 100).toFixed(0);
+const percentage = (num, total) => (((num/total) || 0) * 100).toFixed(1);
 
 const getLocalStorage = (key) => parseInt(localStorage.getItem(key) || '0', 10);
 
