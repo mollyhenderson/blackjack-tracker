@@ -1,12 +1,38 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
+const STORED = {
+  WINS: 'wins',
+  LOSSES: 'losses',
+  PUSHES: 'pushes'
+};
 
 const percentage = (num, total) => (((num/total) || 0) * 100).toFixed(0);
+
+const getLocalStorage = (key) => parseInt(localStorage.getItem(key) || '0', 10);
 
 function App() {
   const [wins, setWins] = useState(0);
   const [losses, setLosses] = useState(0);
   const [pushes, setPushes] = useState(0);
+
+  useEffect(() => {
+    setWins(getLocalStorage(STORED.WINS));
+    setLosses(getLocalStorage(STORED.LOSSES));
+    setPushes(getLocalStorage(STORED.PUSHES));
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem(STORED.WINS, wins);
+  }, [wins]);
+
+  useEffect(() => {
+    localStorage.setItem(STORED.LOSSES, losses);
+  }, [losses]);
+
+  useEffect(() => {
+    localStorage.setItem(STORED.PUSHES, pushes);
+  }, [pushes]);
 
   const win = () => {
     setWins(wins + 1);
