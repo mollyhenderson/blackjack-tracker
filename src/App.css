@@ -4,7 +4,7 @@
 }
 
 .total {
-  margin: 7% 0;
+  margin: 5% 0;
 }
 
 button {
@@ -48,7 +48,7 @@ button {
 
   font-size: 3rem;
   width: 50%;
-  border-radius: 20%;
+  border-radius: 7%/24%;
   padding-bottom: 6%;
   padding-top: 6%;
 }
