@@ -46,7 +46,9 @@ button {
 .reset {
   background-color: #555555;
 
-  font-size: 4rem;
+  font-size: 3rem;
   width: 50%;
   border-radius: 20%;
+  padding-bottom: 6%;
+  padding-top: 6%;
 }
