@@ -1,12 +1,27 @@
+.App {
+  text-align: center;
+  font-family: monospace;
+}
+
 button {
-  border-radius: 100%;
+  border-radius: 50%;
   border: none;
   color: white;
-  padding: 15px 15px;
+  width: 40pt;
+  height: 40pt;
+  margin: 6pt;
   text-align: center;
   text-decoration: none;
-  font-size: 16pt;
-  font-family: monospace;
+  font-size: 24pt;
+}
+
+button {
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
 }
 
 .row {
@@ -18,13 +33,15 @@ button {
 }
 
 .loss {
-  background-color: #EF0000;
+  background-color: #f44336;
 }
 
 .push {
-  background-color: #0048ff;
+  background-color: #008CBA;
 }
 
 .reset {
-  background-color: #898989;
+  background-color: #555555;
+  width: 80pt;
+  border-radius: 20%;
 }
