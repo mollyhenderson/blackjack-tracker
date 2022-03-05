@@ -1,0 +1,30 @@
+button {
+  border-radius: 100%;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16pt;
+  font-family: monospace;
+}
+
+.row {
+  display: block;
+}
+
+.win {
+  background-color: #4CAF50;
+}
+
+.loss {
+  background-color: #EF0000;
+}
+
+.push {
+  background-color: #0048ff;
+}
+
+.reset {
+  background-color: #898989;
+}
